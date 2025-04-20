@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+/* @import "tw-animate-css"; */
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-DEFAULT: var(--primary-DEFAULT);
+  --color-secondary: var(--secondary);
+  --color-secondary-dark: var(--secondary-dark);
+  --color-secondary-DEFAULT: var(--secondary-DEFAULT);
+  --color-dark-DEFAULT: var(--dark-DEFAULT);
+  --color-dark-light: var(--dark-light);
+  --color-bg-color: var(--bg-color);
+  --color-text: var(--text-color);
+  --color-text1: var(--text-color1);
+  --color-text2: var(--text-color2);
+  --color-button: var(--button-color);
+  --color-button1: var(--button-color1);
+  --color-button2: var(--button-color2);
+  --color-hover-button-color: var(--hover-button-color);
+  --color-hover-button-color1: var(--hover-button-color1);
+  --font-inter: var(--inter-font);
+  --font-poppins: var(--poppins-font);
+}
+
+:root {
+  --primary: #6366f1;
+  --secondary: #f43f5e;
+  --primary-dark: #4338ca;
+  --secondary-dark: #be123c;
+  --primary-DEFAULT: #4f46e5;
+  --secondary-DEFAULT: #e11d48;
+  --dark-DEFAULT: #be123c;
+  --dark-light: #1e293b;
+  --bg-color: #ffffff;
+  --text-color: #fafafa;
+  --text-color1: #7d8184;
+  --text-color2: #000000;
+  --button-color: #000000;
+  --button-color1: #00ff66;
+  --button-color2: #db4444;
+  --hover-button-color: #e07575;
+  --hover-button-color1: #a0bce0;
+  --inter-font: "Inter", sans-serif;
+  --poppins-font: "Poppins", sans-serif;
+}
+
+@layer base {
+  body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  }
+  .gradient-text {
+    background: linear-gradient(90deg, #4f46e5 0%, #e11d48 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .story-ring {
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to right, #4f46e5, #e11d48) border-box;
+    border: 2px solid transparent;
+  }
+
+  .post-actions button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+  }
+
+  .comment-input:focus {
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+  }
+
+  .suggested-user:hover .follow-btn {
+    opacity: 1;
+  }
+
+  .trending-tag:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  /* signup start  */
+
+  .gradient-text {
+    background: linear-gradient(90deg, #4f46e5 0%, #e11d48 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .input-field {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+  }
+
+  .input-field:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  }
+
+  .password-strength {
+    height: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .password-toggle {
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  /* home start */
+
+  .gradient-text {
+    background: linear-gradient(90deg, #4f46e5 0%, #e11d48 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .story-ring {
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(to right, #4f46e5, #e11d48) border-box;
+    border: 2px solid transparent;
+  }
+
+  .post-actions button:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+  }
+
+  .comment-input:focus {
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+  }
+
+  .suggested-user:hover .follow-btn {
+    opacity: 1;
+  }
+
+  .trending-tag:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
